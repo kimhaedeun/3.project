@@ -1,8 +1,0 @@
-
-*{margin: 0; padding: 0; box-sizing: border-box;
-    font-weight: 300;}
-body{height: 100%; overflow-y: hidden; font-size: 10px;}
-html{height: 100%;}
-body::-webkit-scrollbar{display: none;}
-ul,li,ol{list-style: none;}
-a{text-decoration: none; }

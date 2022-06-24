@@ -7,11 +7,16 @@
     <title>Dolphiners.com</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+   
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
 
     <!--page css-->
-    <link rel="stylesheet" href="css/main.css">
-    <script src="swiper.min.js"></script>
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/main/swiper.min.css">
+    <script src="js/common.js"></script>
+    <script src="js/main/swiper.min.js"></script>
+    
 </head>
 
 <body>
@@ -209,15 +214,208 @@
     <!-- //이벤트 page -->
 
     <!-- 두 번째 page_panel2 -->
-    <div id="main_panel2" class="main_panel">
-        <div class="contains"></div>
+    <div id="main_panel2" class="main_panel vs_panel">
+         <div class="inner">
+                <div class="main_title page_animate_delay_4">
+                    <div class="contains">
+                        <p class="txt">TITLE</p>
+                        <p class="tit">TITLE2 <br/> <br/><br class="mobile"/></p>
+                        <p class="tit2">TITLE3 <br/></p>
+                    </div>
+                </div>
+
+                <div class="phone_box">
+                    <div class="swiper mySwiper photo_slider vs_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide page_animate op">
+                                <a href="" class="box">
+                                    <div class="img_box">
+                                        <img src="" alt="" />
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="txt1">title</span>
+                                        <span class="txt2">detail <br class="pc"/><br class="pc"/></span>
+
+                                        <p class="btn_arrow btn g">
+                                            <span class="ic"></span>
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide page_animate op">
+                                <a href="" class="box ">
+                                    <div class="img_box">
+                                        <img src="" alt="" />
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="txt1">title</span>
+                                        <span class="txt2">text <br class="pc"/> <br class="pc"/></span>
+                                        <p class="btn_arrow btn g">
+                                            <span class="ic"></span>
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide page_animate op">
+                                <a href="" class="box ">
+                                    <div class="img_box">
+                                        <img src="" alt="" />
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="txt1">Title</span>
+                                        <span class="txt2">text<br class="pc"/> <br class="pc"/></span>
+                                        <p class="btn_arrow btn g">
+                                            <span class="ic"></span>
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide page_animate op">
+                                <a href="" class="box ">
+                                    <div class="img_box">
+                                        <img src="" alt="" />
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="txt1">title</span>
+                                        <span class="txt2">text<br/> <br class="pc"/></span>
+                                        <p class="btn_arrow btn g">
+                                            <span class="ic"></span>
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide page_animate op">
+                                <a href="" class="box ">
+                                    <div class="img_box">
+                                        <img src="" alt="" />
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="txt1">title</span>
+                                        <span class="txt2">detail <br class="mobile"/> <br class="pc"/> <br class="pc"/><br class="mobile"/></span>
+                                        <p class="btn_arrow btn g">
+                                            <span class="ic"></span>
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                    </div>
+                </div>
+
+                <script>
+                    //vs_slider
+                    var swiper = new Swiper(".vs_slider", {
+                        loop:true,
+                        loopAdditionalSlides : 1,
+                        autoplay:false,
+                        // autoplay: {
+                        //     delay: 2000,
+                        //     disableOnInteraction: false,
+                        // },
+                        slidesPerView: 5,
+                        pagination: {
+                            el: ".vs_slider .swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".vs_slider .swiper-button-next",
+                            prevEl: ".vs_slider .swiper-button-prev",
+                        },
+
+                        breakpoints: {
+                            1500: {
+                            slidesPerView: 3,
+                            spaceBetween: 0,
+                            },
+                            900: {
+                            slidesPerView: 3,
+                            spaceBetween: 0
+                            },
+                            767: {
+                            slidesPerView: 3,
+                            spaceBetween: 0
+                            },
+                            588: {
+                            slidesPerView: 2,
+                            spaceBetween: 0
+                            }
+                        }
+                    });
+
+                </script>
+
+            </div>
     </div>
     <!-- //두 번째 page_panel2 -->
 
         <!-- 세 번째 page_panel3 -->
-        <div id="main_panel3" class="main_panel">
+        <div id="main_panel3" class="main_panel update_panel">
             <div class="contains">
-                <div class="main_title"></div>
+                <div class="main_title">
+                    <p class="txt">MAIN TITLE</p>
+                    <p class="tit">MAIN TEXT <br class="mobile"/></p>
+
+                    <a href="" class="btn_arrow btn pc">
+                        <span class="t">GO</span>
+                        <span class="ic"></span>
+                    </a>
+                </div>
+
+                <div class="update_box">
+                    <ul>
+                        <li class="page_animate">
+                            <div class="box ">
+                                <p class="tit">TITLE</p>
+                                <p class="txt">TEXT <br class="pc"/>.</p>
+                                <p class="img">
+                                    <img src="" alt="" />
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page_animate">
+                            <div class="box">
+                                <p class="tit">TITLE</p>
+                                <p class="txt">TEXT <br class="pc"/>.</p>
+                                <p class="img">
+                                    <img src="" alt="" />
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page_animate">
+                            <div class="box">
+                                <p class="tit">TITLE</p>
+                                <p class="txt">TEXT <br class="pc"/>.</p>
+                                <p class="img">
+                                    <img src="" alt="" />
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn_box mobile">
+                    <a href="" class="btn_normal btn_gline btn_s"><span>TEXT</span></a>
+                </div>
             </div>
         </div>
         <!-- //세 번째 page_panel3 -->
