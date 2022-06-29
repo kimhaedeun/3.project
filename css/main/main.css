@@ -13,9 +13,9 @@
 .top_visual .text_table .cell.bottom { vertical-align: bottom;}
 .top_visual .text_table .cell.left {  text-align: left;}
 .top_visual .text_table .cell.right {  text-align: right;}
-.top_visual .text_table .cell .tit { font-size:50px; font-weight: 100; color:#fff; margin-top:15px; line-height: 1.2em;}
-.top_visual .text_table .cell .tit span {font-weight: 700; }
-.top_visual .text_table .cell .tit b {font-weight: 700; }
+.top_visual .text_table .cell .tit { font-size:50px; font-weight: 100; color:#fff; margin-top:200px; line-height: 1.2em;}
+.top_visual .text_table .cell .tit span {font-weight: 200; font-size: 20px;;}
+.top_visual .text_table .cell .tit b {font-weight: 700; color: #f5bf45; font-size: 100px;}
 
 .top_visual .text_table .cell .txt { font-size:18px; font-weight: 500; color:#fff; line-height: 1.2em;}
 .top_visual .text_table .cell .desc { font-size:16px; color:#fff; margin-top:15px; line-height: 1.2em; opacity: 0.5;}
@@ -97,8 +97,11 @@
 #event_panel{
     width: 100%;
     height: 200px;
-    background-color: goldenrod;
+    background-color: #256f4e;
     border: 5px solid #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/common/banner.jpg);
 }
 
 /* 두 번째 page_panel2 */
@@ -140,7 +143,7 @@
 
 /*vs */
 .vs_panel.main_panel {padding-top: 50px;}
-.vs_panel .inner { background:url(/images/main/bg.jpg) center bottom no-repeat; padding:100px 0 80px}
+.vs_panel .inner { background:url() center bottom no-repeat; padding:100px 0 80px}
 .vs_panel .main_title { padding-bottom: 50px;}
 .vs_panel .main_title .tit2 {position: absolute; bottom:0; right:0;width: 30%;}
 
