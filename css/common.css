@@ -14,9 +14,11 @@
 
 /* 헤더 */
 .header {position: fixed; top:0; left:0; right:0; padding:0 50px 0; z-index:200; text-align: center; height: 64px; }
-.header h1 { position: absolute; top:17px; left:30px; z-index: 100; }
+.header h1 { position: absolute; top: 8px; left:50px; z-index: 100; }
 .header h1 a { display: block}
 .header h1 .b { display: none; opacity: 0; position: absolute;}
+.header h1 .pc img{width: 200px; height: 200px;}
+
 .header .gnb { margin:20px auto 0;}
 .header .gnb ul li {display: inline-block; vertical-align: middle;padding:0 30px}
 .header .gnb ul li + li {margin-left:20px}
@@ -72,6 +74,7 @@
 .header:hover h1 .b { display: block; opacity:1 ; }
 .header:hover .gnb .btn_lang { background:#f1f1f1; color:#222;}
 .header:hover .gnb .btn_lang span::after {background-image:url()}
+.header:hover h1 .pc img{width: 50px; height: 50px;}
 
 .header .gnb { position: relative;}	
 .header .gnb::after { opacity: 0; content: ""; width:100%; height: 1px; background:rgba(0,0,0,0.1); position: absolute; top:44px; left:0;}
@@ -92,8 +95,8 @@
 
 .bg_w.header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
 .bg_w.header .gnb ul li a {color:#222; }
-.bg_w.header .btn_login { background-image: url(); background-color: rgba(255,255,255,0.8); }
-.bg_w.header .btn_join { background-image: url(); background-color: rgba(255,255,255,0.8); }
+.bg_w.header .btn_login { background-image: url(/images/common/ic_login.png);}
+.bg_w.header .btn_join { background-image: url(/images/common/ic_join.png);}
 .bg_w.header h1 .w { display: none; opacity: 0; }
 .bg_w.header h1 .b { display: block; opacity:1 ; }
 .bg_w.header .gnb .btn_lang { background: rgba(255,255,255,0.8); color:#222;}
@@ -102,12 +105,14 @@
 
 .scroll .header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
 .scroll .header .gnb ul li a {color:#222; }
-.scroll .header .btn_login { background-image: url();b ackground-color: #f1f1f1;}
-.scroll .header .btn_join { background-image: url(); background-color: #f1f1f1;}
+.scroll .header .btn_login { background-image: url(/images/common/ic_login.png);}
+.scroll .header .btn_join { background-image: url(/images/common/ic_join.png);}
 .scroll .header h1 .w { display: none; opacity: 0; }
 .scroll .header h1 .b { display: block; opacity:1 ; }
 .scroll .header .gnb .btn_lang { background:#f1f1f1; color:#222;}
 .scroll .header .gnb .btn_lang span::after {background-image:url()}
+.scroll .header h1 .pc img{width: 50px; height: 50px;}
+
 
 
 
