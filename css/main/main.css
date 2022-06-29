@@ -195,7 +195,7 @@
 	.btn_normal.hover_b:hover {  border-color: #3284ff; background:#3284ff; }
 
 
-	/* 좌우 화살표 pc 위치 */
+	/* 좌우 화살표 pc 위치 *위치 조정하기**/
     .main_price_panel .swiper-button-prev, 
     .main_price_panel .swiper-container-rtl .swiper-button-next,
     .main_price_panel .swiper-button-next, 
@@ -215,3 +215,47 @@
 	.cardlist_wrap .thumb img.thumbimg:hover { transform: scale(1.1);}
 	
 
+    /* page_main */
+    .main_review_panel {  
+        text-align: center;
+    }
+    .main_review_panel .photo_box {
+        position: relative; 
+    }
+    .main_review_panel .photo_box .thumb {
+        width:100%
+    }
+    /* .main_review_panel .photo_box .thumb img {width:100%} */
+    .main_review_panel .thumb {
+        display: block; 
+        font-size:0;
+        padding-top:56%; 
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .main_review_panel .thumb img.thumbimg{/*opacity: 0.5;*/ position: absolute; top:0; left:0; right:0; width:100%;}
+    .main_review_panel .thumb .btn_play{/*opacity: 0.5;*/ position: absolute; top:50%; transform: translateY(-50%); left:0; right:0; width:100%;}
+    .main_review_panel .thumb .btn_play img { width: 40px;}
+    /* .main_review_panel .swiper-slide.swiper-slide-active img {opacity: 1;} */
+    .main_review_panel .swiper-slide.swiper-slide-active .thumb {background:#999}
+    .main_review_panel .swiper-pagination-bullet-active { background:#3284ff}
+
+    .main_review_panel .video_box {background: #f1f1f1; border-radius: 10px; overflow: hidden;}
+    .main_review_panel .video_box .desc_box { text-align: left; height: 160px; padding:20px 20px 10px;}
+    .main_review_panel .video_box .desc_box .subject { color:#222; font-size: 18px; font-weight: 700; line-height: 1.4em; margin-top: 5px;}
+    .main_review_panel .video_box .desc_box .txt { color:#999; font-size: 13px; font-weight: 500; line-height: 1.6em; letter-spacing: -1px; margin-top: 5px; height: 210px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical;}
+    .main_review_panel .video_box .desc_box .label span {display: inline-block; vertical-align: middle; color:#3284ff; font-size: 13px; font-weight: 700; letter-spacing: 0;}
+    .main_review_panel .video_box .desc_box .label span.best { padding:6px 10px 5px;  border-radius: 50px; border-bottom-right-radius: 0;  background: #ED5452; font-family: 'Montserrat', sans-serif; color:#fff; font-size: 12px; font-weight: 700;}
+
+    .main_review_panel .btn_box { margin-top: 40px;}
+
+    .main_review_panel .main_title { position: relative;}
+    .main_review_panel .btn { position: absolute; bottom:0; right:16px}
+
+
+
+/** 다섯 번째 page **/
+
+.help_panel { background: #f1f1f1;}
+.help_panel .help_box ul li { background: #fff;}
