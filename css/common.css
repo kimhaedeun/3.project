@@ -12,19 +12,104 @@
     
 } 
 
-/*헤더*/
-header{
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 30px 0;
-    z-index: 200;
-    border: 2px solid #333;
-    background-color: rgba(255, 255, 255, 0.2);
+/* 헤더 */
+.header {position: fixed; top:0; left:0; right:0; padding:0 50px 0; z-index:200; text-align: center; height: 64px; }
+.header h1 { position: absolute; top:17px; left:30px; z-index: 100; }
+.header h1 a { display: block}
+.header h1 .b { display: none; opacity: 0; position: absolute;}
+.header .gnb { margin:20px auto 0;}
+.header .gnb ul li {display: inline-block; vertical-align: middle;padding:0 30px}
+.header .gnb ul li + li {margin-left:20px}
+.header .gnb ul li a {display: block; color:#fff; font-size:15px; font-weight: 500; cursor: pointer; letter-spacing: -1px;opacity: 0.6}
+
+.header .gnb .btn_lang_box {
+    position: absolute; 
+    top:-10px; right:0px; 
+    display: inline-block;
 }
+.header .gnb .btn_lang {
+     background: rgba(0,0,0,0.3); 
+     border-radius: 50px; 
+     padding:0 10px; 
+     display:block; 
+     width:auto; 
+     height:40px; 
+     line-height: 40px; 
+      text-align: center; 
+      color:#fff; 
+      font-size: 13px; 
+      letter-spacing: 0;
+       font-weight: 700;
+    }
+.header .gnb .btn_lang span { padding-right: 20px; position: relative;}
+.header .gnb .btn_lang span::after {content: "";background:url() right no-repeat; background-size: 10px auto; position: absolute; top:0; right:0;  width:10px; height:100% }
+
+.header .gnb .btn_lang_con { position: absolute; top:40px; right:0; width:100%; background: #222; padding:5px 0; display: none; border-radius: 10px; }
+.header .gnb .btn_lang_con a + a { border-top:1px solid #666}
+.header .gnb .btn_lang_con a {color:#fff; font-size: 12px; letter-spacing: 0; font-weight: 700; display:block;padding:5px 10px }
+
+.header .gnb .btn_lang_box.open .btn_lang span::after { transform:rotate(-180deg);}
+.header .gnb .btn_lang_box.open .btn_lang_con { display: block;}
+
+.header .btn_join { background: url(/images/common/ic_join_w.png) center no-repeat; /*background-color: rgba(0,0,0,0.3);*/ background-size: auto; position: absolute; top:-9px; right:100px; width:40px; height:40px; border-radius: 40px}
+.header .btn_login { background: url(/images/common/ic_login_w.png) center no-repeat; /*background-color: rgba(0,0,0,0.3);*/ background-size: auto; position: absolute; top:-9px; right:65px; width:40px; height:40px; border-radius: 40px}
+
+.header .gnb ul li.active a {font-weight: 700; opacity: 1;}
+
+.header .gnb .sub_gnb { display: none;}
+.header .btn_menu {display: none;}
+
+	
+
+/* hover */
+.header .gnb ul li a:hover { opacity: 1;}
+
+.header:hover { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2);overflow: hidden;}
+.header:hover .gnb ul li a {color:#222; }
+.header:hover .btn_login { background-image: url();background-color: #f1f1f1; }
+.header:hover .btn_join { background-image: url();background-color: #f1f1f1; }
+.header:hover h1 .w { display: none; opacity: 0; }
+.header:hover h1 .b { display: block; opacity:1 ; }
+.header:hover .gnb .btn_lang { background:#f1f1f1; color:#222;}
+.header:hover .gnb .btn_lang span::after {background-image:url()}
+
+.header .gnb { position: relative;}	
+.header .gnb::after { opacity: 0; content: ""; width:100%; height: 1px; background:rgba(0,0,0,0.1); position: absolute; top:44px; left:0;}
+.header .gnb ul li { position: relative;}	
+.header .sub_gnb { position: absolute; top:50px; left:0; width: 100%; }
+.header .gnb ul li .sub_gnb a { font-size:13px; letter-spacing: -0.5px;}
+.header .gnb ul li .sub_gnb a.active { color:#3284ff}
+.header .gnb ul li .sub_gnb a + a { margin-top: 10px;}
+
+.header:hover { height:220px}
+.header:hover .gnb::after { opacity: 1;}
+.header:hover .sub_gnb { display: block;  }	
+
+.main_panel.bot .btn_box a:hover { background:#3284ff; border-color: #3284ff; color:#fff}
+
+.header .gnb .btn_lang_con a:hover { color:#3284ff}
+
+
+.bg_w.header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
+.bg_w.header .gnb ul li a {color:#222; }
+.bg_w.header .btn_login { background-image: url(); background-color: rgba(255,255,255,0.8); }
+.bg_w.header .btn_join { background-image: url(); background-color: rgba(255,255,255,0.8); }
+.bg_w.header h1 .w { display: none; opacity: 0; }
+.bg_w.header h1 .b { display: block; opacity:1 ; }
+.bg_w.header .gnb .btn_lang { background: rgba(255,255,255,0.8); color:#222;}
+.bg_w.header .gnb .btn_lang span::after {background-image:url()}
+
+
+.scroll .header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
+.scroll .header .gnb ul li a {color:#222; }
+.scroll .header .btn_login { background-image: url();b ackground-color: #f1f1f1;}
+.scroll .header .btn_join { background-image: url(); background-color: #f1f1f1;}
+.scroll .header h1 .w { display: none; opacity: 0; }
+.scroll .header h1 .b { display: block; opacity:1 ; }
+.scroll .header .gnb .btn_lang { background:#f1f1f1; color:#222;}
+.scroll .header .gnb .btn_lang span::after {background-image:url()}
+
+
 
 /* 푸터 */
 
@@ -48,11 +133,11 @@ footer{
 #footer .footer_top .sns_menu li { display: inline-block; vertical-align: middle;}
 #footer .footer_top .sns_menu li + li { margin-left: 10px;}
 #footer .footer_top .sns_menu li a {display:block; border-radius: 34px; width:34px; height:34px; background: rgba(255,255,255,0.1); background-size: cover; background-position: center;}
-#footer .footer_top .sns_menu li a.btn_facebook { background-image: url(../img/common/sns_facebook.png);}
-#footer .footer_top .sns_menu li a.btn_insta { background-image: url(../img/common/sns_insta.png);}
-#footer .footer_top .sns_menu li a.btn_youtube { background-image: url(../img/common/sns_youtube.png);}
-#footer .footer_top .sns_menu li a.btn_blog { background-image: url(../img/common/sns_blog.png);}
-#footer .footer_top .sns_menu li a.btn_cafe { background-image: url(../img/common/sns_cafe.png);}
+#footer .footer_top .sns_menu li a.btn_facebook { background-image: url();}
+#footer .footer_top .sns_menu li a.btn_insta { background-image: url();}
+#footer .footer_top .sns_menu li a.btn_youtube { background-image: url();}
+#footer .footer_top .sns_menu li a.btn_blog { background-image: url();}
+#footer .footer_top .sns_menu li a.btn_cafe { background-image: url();}
 
 #footer .footer_bottom {overflow:hidden; }
 #footer .footer_bottom .logo{float:left;margin-top:10px}

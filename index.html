@@ -20,18 +20,216 @@
 </head>
 
 <body>
-    <!--2022.06.24-->
+    <!--2022.06.29-->
 
-<!--header-->
-<header></header>
-<!--//header-->
+<!-- header -->
+ <div class="header ">
+    <h1>
+        <a href="index.php">
+            <span class="pc"><img src="" class="b" alt="" /><img src="" class="w" alt="logo" /></span>
+            <span class="mobile"><img src="" class="b" alt="" /><img src="" class="w" alt="logo" /></span>
+        </a>
+    </h1>
+
+    <!--메뉴 시작-->
+    <div class="gnb">
+
+        <!-- <div class="mobile_login mobile">
+            <a href="">로그인</a><a href="">회원가입</a>
+            <p>지금 회원가입 하세요.!</p>
+        </div> -->
+        <ul>
+            <li class="gnb1 active">
+                <a href=""><span>MENU1</span></a><span class="ic"></span>
+                <div class="sub_gnb">
+                    <a href="" class="">sub menu1</a>
+
+                    <a href="" class="">sub menu2</a>
+                    <a href="" class="">sub menu3</a>
+                    <a href="" class="">sub menu4</a>
+                    <a href="" class="">sub menu5</a>
+
+                    <!-- <a href="#">단과</a> -->
+                </div>
+            </li>
+            <li class="gnb2 ">
+                <a href=""><span>MENU2</span></a><span class="ic"></span>
+                <div class="sub_gnb">
+                    <a href="" class="">sub menu1 <br class="pc"/>sub menu2</a>
+                    <!-- <a Onclick="alert('5월 31일 공개 됩니다')">산타 서포터즈</a> -->
+                </div>
+            </li>
+            <li class="gnb3">
+                <a href="" target="_blank"><span>MENU3</span></a>
+            </li>
+            <li class="gnb4">
+                <a href="" target="_blank"><span>MENU4</span></a><span class="ic"></span>
+                <div class="sub_gnb">
+                    <a href="" target="_blank">sub menu1</a>
+                    <!-- <a href="#">sub menu2</a> -->
+                </div>
+            </li>
+            <li class="gnb5">
+                <a href=""><span>MENU5</span></a><span class="ic"></span>
+                <div class="sub_gnb">
+                    <a href="" target="_blank">sub menu1</a>
+                    <a href="" target="_blank">sub menu2</a>
+                    <a href="" target="_blank">sub menu3</a>
+                    <a href="" target="_blank">sub menu4</a>
+                </div>
+            </li>
+            <li class="gnb6">
+                <a href="" target="_blank"><span>MENU6</span></a><span class="ic"></span>
+                <div class="sub_gnb">
+                    <a href="">sub menu1</a>
+                    <a href="" target="_blank">sub menu2</a>
+                </div>
+            </li>
+           
+        <a href="" class="btn_join" title="회원가입"></a><a href="" class="btn_login" title="로그인"></a>
+        <div class="btn_lang_box">
+            <a id="btn_lang" class="btn_lang"><span>KO</span></a>
+            <div class="btn_lang_con">
+                <a href="" target="_blank" class="lang_txt"><span>TW</span></a>
+                <a href="" target="_blank" class="lang_txt"><span>JP</span></a>
+                <a href="" target="_blank" class="lang_txt"><span>TH</span></a>
+                <a href="" target="_blank" class="lang_txt"><span>VI</span></a> 
+            </div>
+        </div>
+
+        <!-- <div class="download_box mobile">
+            <p>모바일 앱 다운로드</p>
+            <a href="" target="_blank" class="btn_normal btn_app btn_trans"><img src="" alt="" class="pc" /><img src="" class="mobile" alt="" /></a>
+            <a href="" target="_blank" class="btn_normal btn_google btn_trans"><img src="" alt="" class="pc" /><img src="" alt="" class="mobile" /></a>
+        </div> -->
+    </div>
+
+    <a id="btn_menu" class="btn_menu"></a>
+</div>
+<!-- //header -->
+
 
 <!--contents-->
 <div id="main_contents">
 
-    <!--top_visual-->
-    <div id="top_visual"></div>
-    <!--//top_visual-->
+    <!-- top_visual -->
+    <div id="top_visual" class="top_visual">
+        <div class="swiper mySwiper top_slider">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="background-color: #012348">
+                    <div class="visual_box">
+                        <span class="visual_bg pc" style="background-image: url(/images/main/bg.jpg);"></span>
+                        <img src="" alt="" class="wd_100 mobile"/>
+                        <div class="text_table_wrap">
+                            <div class="text_table">
+                                <div class="cell left">
+                                <div class="contains">
+                                        <!-- <p class="txt"></p> -->
+                                        <p class="tit">
+                                            <span>MAIN <br/>
+                                                제목<br/></span>
+                                            <b>detail 내용 </b>
+                                        </p>
+                                        <p class="desc">sub 내용 <br class="mobile"/>!!</p>
+                                        <div class="btn_box" >
+                                            <a href="" class="btn_arrow w btn">
+                                                <span class="t">button</span>
+                                                <span class="ic"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-color: #012348">
+                    <div class="visual_box">
+                        <span class="visual_bg pc" style="background-image: url(/images/main/bg.jpg);"></span>
+                        <img src="/images/main/bg.jpg" alt="" class="wd_100 mobile"/>
+                        <div class="text_table_wrap">
+                            <div class="text_table">
+                                <div class="cell left">
+                                <div class="contains">
+                                        <!-- <p class="txt"></p> -->
+                                        <p class="tit">
+                                            <span>MAIN <br/>
+                                                제목2<br/></span>
+                                            <b>detail 내용2 </b>
+                                        </p>
+                                        <!-- <p class="desc"> <br class="mobile"/></p> -->
+                                        <div class="btn_box" >
+                                            <a href="" class="btn_arrow w btn">
+                                                <span class="t">button</span>
+                                                <span class="ic"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-color: #28323e">
+                    <div class="visual_box">
+                        <span class="visual_bg pc" style="background-image: url(images/main/bg.jpg);"></span>
+                        <img src="/images/main/bg.jpg" alt="" class="wd_100 mobile"/>
+                        <div class="text_table_wrap">
+                            <div class="text_table">
+                                <div class="cell left">
+                                    <div class="contains">
+                                        <p class="txt">TITLE</p>
+                                            <p class="tit">
+                                                <span>MAIN <br/>
+                                                    제목3<br/></span>
+                                                <b>detail 내용3 </b>
+                                            </p>
+                                        </p>
+                                         <p class="desc">sub 내용 <br class="mobile"/>!!</p>
+                                        <div class="btn_box" >
+                                            <a Onclick="alert('알림창!!!')" class="btn_arrow w btn">
+                                                <span class="t">button</span>
+                                                <span class="ic"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <script>
+            //top visual slider
+            var swiper = new Swiper(".top_slider", {
+                loop:false,
+                loop:true,
+                //touchRatio: 0,
+                navigation: {
+                    nextEl: ".top_visual .swiper-button-next",
+                    prevEl: ".top_visual .swiper-button-prev",
+                },
+                //autoplay:false,
+                autoplay : {
+                    delay : 3000,
+                    disableOnInteraction : false,
+                },
+            });
+
+        </script>
+
+    </div>
+    <!-- //top_visual -->
+
 
     <!-- 첫 번째 page_panel1 -->
     <div id="panel1" class="main_panel">

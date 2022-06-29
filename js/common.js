@@ -149,3 +149,36 @@ $(window).scroll(function() {
     
 });
 
+/*mobile_menu 언어*/
+$(document).ready(function(){
+    $("#btn_menu").click(function(){
+       // $("ul",this).slideToggle("fast");
+       $("html").toggleClass("menu_open");
+    });
+});
+
+
+$(document).ready(function(){
+    $("#btn_lang").click(function(){
+       $(this).parent().toggleClass("open");
+    });
+});
+
+
+$(document).ready(function(){
+    $(".header .gnb ul li .ic").click(function(){
+
+        if($(this).parent().hasClass("active")) {
+            $(this).parent().removeClass("active");
+            $(this).next().stop(true,true).slideUp(200);
+        }
+        else {
+            $(".header .gnb ul li.active").removeClass("active");
+            $(".header .gnb ul li.active .ic").next().stop(true,true).slideUp(200);
+            $(this).parent().addClass("active");
+            $(this).next().stop(true,true).slideDown(200);
+        }
+        
+    });
+});
+
