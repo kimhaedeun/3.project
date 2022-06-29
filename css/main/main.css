@@ -140,7 +140,7 @@
 
 /*vs */
 .vs_panel.main_panel {padding-top: 50px;}
-.vs_panel .inner { background:url(../img/main/bg_phone.jpg) center bottom no-repeat; padding:100px 0 80px}
+.vs_panel .inner { background:url(/images/main/bg.jpg) center bottom no-repeat; padding:100px 0 80px}
 .vs_panel .main_title { padding-bottom: 50px;}
 .vs_panel .main_title .tit2 {position: absolute; bottom:0; right:0;width: 30%;}
 
