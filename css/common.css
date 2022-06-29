@@ -66,8 +66,8 @@
 
 .header:hover { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2);overflow: hidden;}
 .header:hover .gnb ul li a {color:#222; }
-.header:hover .btn_login { background-image: url();background-color: #f1f1f1; }
-.header:hover .btn_join { background-image: url();background-color: #f1f1f1; }
+.header:hover .btn_join { background-image: url(/images/common/ic_join.png); }
+.header:hover .btn_login { background-image: url(/images/common/ic_login.png); }
 .header:hover h1 .w { display: none; opacity: 0; }
 .header:hover h1 .b { display: block; opacity:1 ; }
 .header:hover .gnb .btn_lang { background:#f1f1f1; color:#222;}
