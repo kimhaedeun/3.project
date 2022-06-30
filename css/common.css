@@ -95,8 +95,8 @@
 
 .bg_w.header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
 .bg_w.header .gnb ul li a {color:#222; }
-.bg_w.header .btn_login { background-image: url(/images/common/ic_login.png);}
-.bg_w.header .btn_join { background-image: url(/images/common/ic_join.png);}
+.bg_w.header .btn_login { background-image: url(images/common/ic_login.png);}
+.bg_w.header .btn_join { background-image: url(images/common/ic_join.png);}
 .bg_w.header h1 .w { display: none; opacity: 0; }
 .bg_w.header h1 .b { display: block; opacity:1 ; }
 .bg_w.header .gnb .btn_lang { background: rgba(255,255,255,0.8); color:#222;}
@@ -105,8 +105,8 @@
 
 .scroll .header { background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.2); top: 0!important;}
 .scroll .header .gnb ul li a {color:#222; }
-.scroll .header .btn_login { background-image: url(/images/common/ic_login.png);}
-.scroll .header .btn_join { background-image: url(/images/common/ic_join.png);}
+.scroll .header .btn_login { background-image: url(images/common/ic_login.png);}
+.scroll .header .btn_join { background-image: url(images/common/ic_join.png);}
 .scroll .header h1 .w { display: none; opacity: 0; }
 .scroll .header h1 .b { display: block; opacity:1 ; }
 .scroll .header .gnb .btn_lang { background:#f1f1f1; color:#222;}
