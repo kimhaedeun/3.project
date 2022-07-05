@@ -1,4 +1,3 @@
-
 $(function() {
     page.init();
 });
@@ -13,6 +12,91 @@ var page = {
               
     },
     common: function() {
+
+        //
+        $(".select_box:not(.on)").each(function() {
+            var getSelectBox = $(this);
+            var getValue = $(this).find(".btn_select");
+            var getSelect = $(this).find(".select");
+            var getSelectList = $("<ul class='select_list'></ul>");
+            getSelect.find("option").each(function() {
+                getSelectList.append("<li><a href='#' data-value='" + $(this).attr("value") + "'>" + $(this).text() + "</a></li>");
+            });
+            getSelectBox.append(getSelectList);
+            getSelectBox.addClass("on").find(".select").on("change", function() {
+                getValue.html(getSelect.find("option:selected").text());
+                if(getSelect.hasClass("select_email")) {
+                    if(this.value == "") {
+                        getSelect.closest(".email_box").find(".input_email").prop("readonly",false).val("").focus();
+                    }
+                    else {
+                        getSelect.closest(".email_box").find(".input_email").prop("readonly",true).val(this.value);
+                    }
+                }
+            });
+            getValue.html(getSelect.find("option:selected").text());
+            
+            getValue.on("click", function() {
+                if(getSelectBox.hasClass("active")) {
+                    getSelectBox.removeClass("active");
+                }
+                else {
+                    $(".select_box.active").removeClass("active");
+                    getSelectBox.addClass("active");
+                }
+                return false;
+            });
+            getSelectList.find("a").on("click", function() {
+                getSelectBox.removeClass("active");
+                getSelect.val($(this).data("value")).trigger("change");
+                return false;
+            });
+        });
+		
+		$(".select_box:not(.on)").each(function() {
+            var getValue = $(this).find(".btn_select");
+            var getSelect = $(this).find(".select");
+            $(this).addClass("on").find(".select").on("change", function() {
+                getValue.html(getSelect.find("option:selected").text());
+                if(getSelect.hasClass("select_email")) {
+                    if(this.value == "") {
+                        getSelect.closest(".email_box").find(".input_email").prop("readonly",false).val("").focus();
+                    }
+                    else {
+                        getSelect.closest(".email_box").find(".input_email").prop("readonly",true).val(this.value);
+                    }
+                }
+            });
+            getValue.html(getSelect.find("option:selected").text());
+        });
+        
+        $(".check_box:not(.on)").each(function() {
+            var getCheck = $(this).addClass("on").find(".check").on("change", function() {
+                if(this.checked) {
+                    $(this).parent().addClass("active");
+                }
+                else {
+                    $(this).parent().removeClass("active");
+                }
+            });
+            if(getCheck.is(":checked")) {
+                $(this).addClass("active");
+            }
+        });
+
+        $(".radio_box:not(.on)").each(function() {
+            var getCheck = $(this).addClass("on").find(".radio").on("change", function() {
+                $(this).closest(".radio_area").find(".active").removeClass("active");
+                if(this.checked) {
+                    $(this).parent().addClass("active");
+                }
+            });
+            if(getCheck.is(":checked")) {
+                $(this).addClass("active");
+            }
+        });
+
+
 
         //btn_top
         $(function() {
@@ -120,6 +204,8 @@ function fnMove(seq){
     $("html, body").removeClass("menu_open");
 }
 
+
+
 function notiMove(seq){
     var btn_noti = $("#btn_noti" + seq);    
     var box_noti = $("#box_noti" + seq);    
@@ -131,8 +217,78 @@ function notiMove(seq){
     box_noti.addClass("active");
 }
 
+function priceCheck(seq){ 
+
+    var offset = $("#form_btn").offset();
+    var priceHeight = $("#form_btn").offset();
+
+    $('html, body').animate({scrollTop : priceHeight.top - 450}, 400);
+
+    if($(".price_panel .price_table").hasClass("active_01")) {
+        $(".price_panel .price_table").removeClass("active_01");
+        $(".price_panel .price_table").addClass("active_0" + seq);
+    }
+    else if($(".price_panel .price_table").hasClass("active_02")) {
+        $(".price_panel .price_table").removeClass("active_02");
+        $(".price_panel .price_table").addClass("active_0" + seq);
+    }
+    else if($(".price_panel .price_table").hasClass("active_03")) {
+        $(".price_panel .price_table").removeClass("active_03");
+        $(".price_panel .price_table").addClass("active_0" + seq);
+    }
+    else if($(".price_panel .price_table").hasClass("active_04")) {
+        $(".price_panel .price_table").removeClass("active_04");
+        $(".price_panel .price_table").addClass("active_0" + seq);
+    }
+    else {
+        $(".price_panel .price_table").addClass("active_0" + seq);
+    }
+    return false;
+    
+
+}
+
+//디바이스
+function deviceCheck(seq){ 
 
 
+    if($(".device_table").hasClass("active_01")) {
+        $(".device_table").removeClass("active_01");
+        $(".device_table").addClass("active_0" + seq);
+        $(".price_desc_box").removeClass("active_01");
+        $(".price_desc_box").addClass("active_0" + seq);
+    }
+    else if($(".device_table").hasClass("active_02")) {
+        $(".device_table").removeClass("active_02");
+        $(".device_table").addClass("active_0" + seq);
+        $(".price_desc_box").removeClass("active_02");
+        $(".price_desc_box").addClass("active_0" + seq);
+    }
+    else if($(".device_table").hasClass("active_03")) {
+        $(".device_table").removeClass("active_03");
+        $(".device_table").addClass("active_0" + seq);
+        $(".price_desc_box").removeClass("active_03");
+        $(".price_desc_box").addClass("active_0" + seq);
+    }
+    else if($(".device_table").hasClass("active_04")) {
+        $(".device_table").removeClass("active_04");
+        $(".device_table").addClass("active_0" + seq);
+        $(".price_desc_box").removeClass("active_04");
+        $(".price_desc_box").addClass("active_0" + seq);
+    }
+    else if($(".device_table").hasClass("active_05")) {
+        $(".device_table").removeClass("active_05");
+        $(".device_table").addClass("active_0" + seq);
+        $(".price_desc_box").removeClass("active_05");
+        $(".price_desc_box").addClass("active_0" + seq);
+    }
+    else {
+        $(".device_table").addClass("active_0" + seq);
+    }
+    return false;
+    
+
+}
 
 
 //스크롤
@@ -149,7 +305,8 @@ $(window).scroll(function() {
     
 });
 
-/*mobile_menu 언어*/
+
+/*mobile_menu*/
 $(document).ready(function(){
     $("#btn_menu").click(function(){
        // $("ul",this).slideToggle("fast");
@@ -181,4 +338,7 @@ $(document).ready(function(){
         
     });
 });
+
+
+
 
