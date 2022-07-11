@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* reset */
+
+/* reset */
+html * {max-height: 999999px;} /* font size bug fix */
+html,body{margin:0px;padding:0px;width:100%;font-size:10px;font-family:'SpoqaHanSansNeo', Arial, sans-serif;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;letter-spacing: -1px;overflow-x: hidden;}
+ul,ol,li,dl,dd,dt,input,h1,h2,h3,h4,h5,h6,p,b,input,button,textarea,fieldset,legend,td,th{margin:0px;padding:0px;font-weight:normal;word-break:keep-all}
+li{list-style:none}
+fieldset,img,a{border:0px}
+a{text-decoration:none}
+legend,.blind{position:absolute;top:0;left:-10000px;width:0;height:0;overflow:hidden;font-size:0;line-height:0}
+caption{display:none}
+button,label{cursor:pointer}
+button{overflow:visible\9}	/* button fix for ie8 */
+input,textarea,button,select,option{font-family:'SpoqaHanSansNeo', Arial, sans-serif;}
+table{width:100%;border-collapse:collapse;border-spacing:0;text-align:left; table-layout:fixed}
+table th, table td{text-align:left; word-break:break-word;word-wrap:break-word;}
+input::-webkit-input-placeholder{color:#929292}
+input::-moz-placeholder{color:#929292}
+input:-moz-placeholder{color:#929292}
+input:-ms-input-placeholder{color:#929292}
+textarea::-webkit-input-placeholder{color:#929292}
+textarea::-moz-placeholder{color:#929292}
+textarea:-moz-placeholder{color:#929292}
+textarea:-ms-input-placeholder{color:#929292}
+input:focus::-webkit-input-placeholder{color:transparent!important}
+input:focus::-moz-placeholder{color:transparent!important}
+input:focus:-moz-placeholder{color:transparent!important}
+input:focus:-ms-input-placeholder{color:transparent!important}
+textarea:focus::-webkit-input-placeholder{color:transparent!important}
+textarea:focus::-moz-placeholder{color:transparent!important}
+textarea:focus:-moz-placeholder{color:transparent!important}
+textarea:focus:-ms-input-placeholder{color:transparent!important}
+header, footer, section, article, aside, nav, address { display: block; margin:0; } /* ie8 */
