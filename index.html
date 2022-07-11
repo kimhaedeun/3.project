@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -28,19 +29,19 @@
     <div class="header ">
         <h1>
             <a href="index.php">
-                <span class="pc"><img src="images/common/logo.jpg" class="b" alt="산타" /><img
-                        src="images/common/logo.jpg" class="w" alt="산타" /></span>
-                <!-- <span class="mobile"><img src="images/common/logo.jpg" class="b" alt="산타" /><img src="images/common/logo.jpg" class="w" alt="산타" /></span> -->
+                <span class="pc"><img src="images/common/logo.jpg" class="h_box" alt="logo" /><img
+                        src="images/common/logo.jpg" class="w" alt="logo" /></span>
+                <!-- <span class="mobile"><img src="images/common/logo.jpg" class="h_box" alt="logo" /><img src="images/common/logo.jpg" class="w" alt="logo" /></span> -->
             </a>
         </h1>
 
-        <!--메뉴 시작-->
+        <!-- 최상위 전체 네비게이션(메뉴) 시작-->
         <div class="gnb">
 
             <ul>
                 <li class="gnb1 active">
                     <a href="#"><span>마세슾</span></a><span class="ic"></span>
-                    <div class="sub_gnb">
+                    <div class="sub_gnb"><!--gnb>sub 서브 메뉴-->
                         <a href="#" class=""># 인스타그램</a>
                         <a href="#" class=""># 유튜브</a>
                         <a href="#" class=""># 팝업스토어</a>
@@ -50,7 +51,7 @@
                 </li>
                 <li class="gnb2 ">
                     <a href="#"><span>커리큘럼</span></a><span class="ic"></span>
-                    <div class="sub_gnb">
+                    <div class="sub_gnb"> <!--gnb>sub 서브 메뉴-->
                         <a href="#" target="_blank">스마트폰으로 촬영하기</a>
                         <a href="#" target="_blank">영화같은 화각과 구도잡기</a>
                         <a href="#" target="_blank">라이트 룸으로 사진 보정하기</a>
@@ -59,13 +60,13 @@
                 </li>
                 <li class="gnb3">
                     <a href="#" target="_blank"><span>럭키드로우</span></a>
-                    <div class="sub_gnb">
+                    <div class="sub_gnb"><!--gnb>sub 서브 메뉴-->
                         <a href="#" target="_blank">드로우앤드류</a>
                     </div>
                 </li>
                 <li class="gnb4">
                     <a href="#"><span>커뮤니티</span></a><span class="ic"></span>
-                    <div class="sub_gnb">
+                    <div class="sub_gnb"><!--gnb>sub 서브 메뉴-->
                         <a href="#" target="_blank">마세습 FAQ</a>
                         <a href="#" target="_blank">설문조사</a>
                         <a href="#" target="_blank">마세습 Land!</a>
@@ -74,10 +75,12 @@
                 </li>
 
 
-                <a href="#" class="btn_join" title="회원가입"></a><a href="#" class="btn_login" title="로그인"></a>
+                <a href="#" class="btn_join" title="회원가입"> <img src="images/common/ic_join_w.png" alt="join"></a>
+                <a href="#" class="btn_login" title="로그인"><img src="images/common/ic_login_w.png" alt="login"></a>
+            
         </div>
 
-        <a id="btn_menu" class="btn_menu"></a>
+        <a id="btn_menu" class="btn_menu"><img src="images/common/btn_menu.png" alt="btn_menu"></a>
     </div>
     <!-- //header -->
 
@@ -124,11 +127,9 @@
                                 <div class="text_table">
                                     <div class="cell left">
                                         <div class="contains">
-                                            <!-- <p class="txt"></p> -->
                                             <p class="tit">
                                                 <span>여러분은 왜 기록하고 싶으신가요?<br/></span>
                                             </p>
-                                            <!-- <p class="desc"> <br class="mobile"/></p> -->
                                             <div class="btn_box">
                                                 <a href="#" class="btn_arrow w btn">
                                                     <span class="t">THE MORE</span>
@@ -174,45 +175,27 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <script>
-                //top visual slider
-                var swiper = new Swiper(".top_slider", {
-                    loop: false,
-                    loop: true,
-                    //touchRatio: 0,
-                    navigation: {
-                        nextEl: ".top_visual .swiper-button-next",
-                        prevEl: ".top_visual .swiper-button-prev",
-                    },
-                    //autoplay:false,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                });
-
-            </script>
 
         </div>
         <!-- //top_visual -->
 
 
         <!-- 첫 번째 page_panel1 -->
-        <div id="panel1" class="main_panel main_price_panel panel1_main">
+        <div id="panel1" class="main_panel main_price_panel main_panel1">
             <div class="contains">
                 <div class="main_title page_animate right">
                     <p class="tit">기술보단 감각 배우기,<br />스마트폰으로 일상을 감성적으로 기록하는 법</p>
                 </div>
 
                 <div class="photo_box page_animate_delay_2">
-                    <div class="swiper mySwiper price_slider">
+                    <div class="swiper mySwiper bg_slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="pd_box">
                                     <p class="top_txt">
                                         <span class="txt">CHAPTER1</span><span class="dot"></span>
                                     </p>
-                                    <a href="" class="thumb container">
+                                    <a href="#" class="thumb container">
                                         <div class="item front pc"><img src="images/main/frontitem.png" class="thumbimg"
                                                 alt="frontitem" /></div>
                                         <div class="item back">
@@ -288,7 +271,7 @@
                                     <p class="top_txt">
                                         <span class="txt">CHAPTER5</span><span class="dot"></span>
                                     </p>
-                                    <a href="detail_freepass.php" class="thumb container">
+                                    <a href="" class="thumb container">
                                         <div class="item front pc"><img src="images/main/frontitem.png" class="thumbimg"
                                                 alt="frontitem" /></div>
                                         <div class="item back">
@@ -332,8 +315,8 @@
                 </div>
 
                 <script>
-                    //price slider
-                    var swiper = new Swiper(".price_slider", {
+                    //bg_slider
+                    var swiper = new Swiper(".bg_slider", {
                         loop: true,
                         loopAdditionalSlides: 1,
                         // autoplay:false,
@@ -344,12 +327,12 @@
                         slidesPerView: 4,
                         spaceBetween: 20,
                         pagination: {
-                            el: ".price_slider .swiper-pagination",
+                            el: ".bg_slider .swiper-pagination",
                             clickable: true,
                         },
                         navigation: {
-                            nextEl: ".price_slider .swiper-button-next",
-                            prevEl: ".price_slider .swiper-button-prev",
+                            nextEl: ".bg_slider .swiper-button-next",
+                            prevEl: ".bg_slider .swiper-button-prev",
                         },
 
                         breakpoints: {
@@ -380,13 +363,15 @@
         <!-- 이벤트 page -->
         <div id="event_panel">
             <div class="inner">
-
+                    <div id="obj">
+                        <img src="images/common/banner.jpg" alt="">
+                    </div>
             </div>
         </div>
         <!-- //이벤트 page -->
 
         <!-- 두 번째 page_panel2 -->
-        <div id="main_panel2" class="main_panel vs_panel">
+        <div class="main_panel vs_panel main_panel2">
             <div class="inner">
                 <div class="main_title page_animate_delay_4">
                     <div class="contains">
@@ -542,7 +527,7 @@
         <!-- //두 번째 page_panel2 -->
 
         <!-- 세 번째 page_panel3 -->
-        <div id="main_panel3" class="main_panel update_panel">
+        <div class="main_panel update_panel main_panel3">
             <div class="contains">
                 <div class="main_title">
                     <p class="txt">우리 모두에게는 자신의 안전 공간이 필요하다.</p>
@@ -554,7 +539,7 @@
                     </a>
                 </div>
 
-                <div class="update_box">
+                <div class="update_box episode_box">
                     <ul>
                         <li class="page_animate">
                             <div class="box ">
@@ -595,7 +580,7 @@
 
         <!-- 네 번째 page_panel4 -->
 
-        <div class="main_panel main_review_panel " id="main_panel4">
+        <div class="main_panel main_review_panel main_panel4" >
             <div class="contains">
                 <div class="main_title">
                     <p class="tit"> 드로우앤드류 <br class="mobile" /></p>
@@ -962,9 +947,6 @@
                 <li>
                     <a href="#" target="_blank" class="btn_blog"></a>
                 </li>
-                <li>
-                    <a href="#" target="_blank" class="btn_cafe"></a>
-                </li>
             </ul>
             <ul class="footer_menu">
                 <li><a href="#" target="_blank" class="btn_privacy">개인정보처리방침</a></li>
@@ -984,7 +966,24 @@
     </div>
     <!-- //footer -->
 
+    <script>
+        //top visual slider 메인 배경화면 슬라이더
+        var swiper = new Swiper(".top_slider", {
+            loop: false,
+            loop: true,
+            //touchRatio: 0,
+            navigation: {
+                nextEl: ".top_visual .swiper-button-next",
+                prevEl: ".top_visual .swiper-button-prev",
+            },
+            //autoplay:false,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
 
+    </script>
 
 </body>
 
